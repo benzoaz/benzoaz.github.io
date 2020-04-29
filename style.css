@@ -1,86 +1,42 @@
-div {
-  display: flex;
-  margin: auto;
-  width: 1200px;
-  justify-content: center;
+.main {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    height: 512px;
+    width: 900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-top {
-  width: 100%;
-  max-width: 1160px;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 20px;
-  background: black;
-  top: 0px; 
+
+body{
+    background-color: grey;
 }
-top a {
-  color: white;
-  text-decoration: none;
-  font-size: 150%;
+#arrowLeft {
+    height: 10%;
+    width: 10%;
+    position: fixed;
+    top: 50%;
 }
-.header {
-  position: relative;
+#arrowRight {
+    height: 10%;
+    width: 10%;
+    position: fixed;
+    top: 50%;
+    transform: scale(-1, 1);
+    margin-left: 815px;
+    
 }
-img {
-  display: flex;
-  object-fit: cover;
-  width: 500px;
-  height: 600px;
+#photo {
+    object-fit: contain;
 }
-h1 {
-  position: absolute;
-  margin-top: 150px;
-  margin-left: 50px;
-  font-size: 40px;
+#whole {
+    position: fixed;
+    left: 25%;
 }
-.first {
-  position: absolute;
-  font-size: 80px;
-}
-h1, h2, h3, blockquote {
-  font-family: 'Rubik', sans-serif;
-  color: #222;
-}
-h3 {
-  font-size: 30px;
-}
-h2 {
-  font-size: 50px;
-}
-p,ul {
-  font-family: 'Josefin Sans', sans-serif;
-  color: #222;
-  line-height: 30px;
-}
-h4 {
-  font-family: 'Merriweather', serif;
-  font-size: 15px;
-  font-style: italic;
-  line-height: 0px;
-}
-section {
-  display: block;
-  width: 700px;
-  margin-top: 50px;
-  margin-left: -30px;
-}
-blockquote {
-  background: black;
-  color: white;
-  font-size: 50px;
-  line-height: 200%;
-  padding: 50px;
-  position: relative;
-  width: 500px;
-  margin-left: 0px;  
-  box-sizing: border-box;
-}
-blockquote::before {
-  position: absolute;
-  content: '”';  
-  margin-top: -100px; 
-  margin-left: -50px;
-  font-size: 150px;
-  transform: scale(-1, -1);
+#text {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    color: white;
+    transform: translate(0%, -103%);
 }
